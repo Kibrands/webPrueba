@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>Utilidades | Asociación Deportiva IES Luis Vélez de Guevara</title>
+    <title>Socios | Asociación Deportiva IES Luis Vélez de Guevara</title>
 
     <!-- Favicon -->
     <link rel="icon" href="../img/favicon.png">
@@ -25,7 +25,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
-
 </head>
 
 <body>
@@ -92,26 +91,20 @@
                 </div>
                 <div class="list-group">
                     <div class="panel-body">
-                        <h4>Uso en el terminal del navegador</h4>
                         <table class="table table-borderless">
                             <tr>
                                 <td>
-                                    <button class="btn btn-default" onclick="darAlta()" style="width: 100%;">Darse de alta</button>
+                                    <button class="btn btn-default" onclick="formularioAlta()" style="width: 100%;">Darse de alta</button>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <button class="btn btn-default" onclick="darBajaPorNumeroSocio()" style="width: 100%;">Darse de baja por Nº socio</button>
+                                    <button class="btn btn-default" onclick="formularioBajaNumeroSocio()" style="width: 100%;">Darse de baja</button>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <button class="btn btn-default" onclick="darBajaPorDni()" style="width: 100%;">Darse de baja por DNI</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <button class="btn btn-default" onclick="modificarLocalidad()" style="width: 100%;">Modificar Localidad</button>
+                                    <button class="btn btn-default" onclick="formularioModificarLocalidad()" style="width: 100%;">Modificar Localidad</button>
                                 </td>
                             </tr>
                             <tr>
@@ -121,22 +114,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <button class="btn btn-default" onclick="buscarSocioPorDni()" style="width: 100%;">Buscar socio por DNI</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <button class="btn btn-default" onclick="buscarSocioPorNombreYApellidos()" style="width: 100%;">Buscar socio por nombre</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <button class="btn btn-default" onclick="buscarSociosPorCategoria()" style="width: 100%;">Buscar socios por categoría</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <button class="btn btn-default" onclick="buscarSociosPorLocalidad()" style="width: 100%;">Buscar socios por localidad</button>
+                                    <button class="btn btn-default" onclick="formularioBuscarSocios()" style="width: 100%;">Búsqueda de socios</button>
                                 </td>
                             </tr>
                         </table>
@@ -153,7 +131,9 @@
 
             <!-- Articles -->
             <div class="row">
-                <article class="col-xs-12" id="contenido"></article>
+                <article class="col-xs-12" id="contenido">
+                    <h2>Gestión de socios</h2>
+                </article>
             </div>
         </div>
         <!--/Center Column-->
